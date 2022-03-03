@@ -31,7 +31,7 @@ namespace MicrosWPSShopping.ProductApi.Controllers
             return Ok(product);
         }
         [HttpPost]
-        public async Task<ActionResult<ProductVo>> Create(ProductVo vo)
+        public async Task<ActionResult<ProductVo>> Create([FromBody] ProductVo vo)
         {
             if (vo == null)
                 return BadRequest();
@@ -39,7 +39,7 @@ namespace MicrosWPSShopping.ProductApi.Controllers
             return Ok(product);
         }
         [HttpPut]
-        public async Task<ActionResult<ProductVo>> Update(ProductVo vo)
+        public async Task<ActionResult<ProductVo>> Update([FromBody] ProductVo vo)
         {
             if (vo == null)
                 return BadRequest();
