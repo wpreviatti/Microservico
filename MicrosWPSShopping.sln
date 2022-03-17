@@ -7,9 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{73
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{DF7C5736-6895-4D47-8A67-5C1550D8C6E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosWPSShopping.Web", "MicrosWPSShopping.Web\MicrosWPSShopping.Web.csproj", "{0E04C087-896F-4526-9BEB-DA72D11F6AF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosWPSShopping.Web", "MicrosWPSShopping.Web\MicrosWPSShopping.Web.csproj", "{0E04C087-896F-4526-9BEB-DA72D11F6AF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosWPSShopping.ProductApi", "MicrosWPSShopping.ProductApi\MicrosWPSShopping.ProductApi.csproj", "{7A3B8480-8FE9-4889-A929-5CBD42A52F2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosWPSShopping.ProductApi", "MicrosWPSShopping.ProductApi\MicrosWPSShopping.ProductApi.csproj", "{7A3B8480-8FE9-4889-A929-5CBD42A52F2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosWPSShopping.IdentityServer", "MicrosWPSShopping.IdentityServer\MicrosWPSShopping.IdentityServer.csproj", "{5883305E-FBB0-4206-BE6B-F1F6219EEC2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{7A3B8480-8FE9-4889-A929-5CBD42A52F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A3B8480-8FE9-4889-A929-5CBD42A52F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A3B8480-8FE9-4889-A929-5CBD42A52F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5883305E-FBB0-4206-BE6B-F1F6219EEC2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5883305E-FBB0-4206-BE6B-F1F6219EEC2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5883305E-FBB0-4206-BE6B-F1F6219EEC2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5883305E-FBB0-4206-BE6B-F1F6219EEC2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
