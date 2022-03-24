@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosWPSShopping.Web", "Mi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosWPSShopping.ProductApi", "MicrosWPSShopping.ProductApi\MicrosWPSShopping.ProductApi.csproj", "{7A3B8480-8FE9-4889-A929-5CBD42A52F2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosWPSShopping.IdentityServer", "MicrosWPSShopping.IdentityServer\MicrosWPSShopping.IdentityServer.csproj", "{5883305E-FBB0-4206-BE6B-F1F6219EEC2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosWPSShopping.IdentityServer", "MicrosWPSShopping.IdentityServer\MicrosWPSShopping.IdentityServer.csproj", "{5883305E-FBB0-4206-BE6B-F1F6219EEC2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{D1418BAF-9340-4B6C-8EC4-EFFEFB5B0608}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0E04C087-896F-4526-9BEB-DA72D11F6AF5} = {73D2B0D7-2C91-401C-8B98-5C97A8742265}
 		{7A3B8480-8FE9-4889-A929-5CBD42A52F2F} = {DF7C5736-6895-4D47-8A67-5C1550D8C6E4}
+		{5883305E-FBB0-4206-BE6B-F1F6219EEC2B} = {D1418BAF-9340-4B6C-8EC4-EFFEFB5B0608}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4F13C539-0F89-44BC-8572-43C8759A1A56}

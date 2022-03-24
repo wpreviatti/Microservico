@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MicrosWPSShopping.ProductApi.Data.ValueObjects;
 using MicrosWPSShopping.ProductApi.Repository.Interface;
+using MicrosWPSShopping.ProductApi.Utils;
 
 namespace MicrosWPSShopping.ProductApi.Controllers
 {
@@ -15,6 +17,7 @@ namespace MicrosWPSShopping.ProductApi.Controllers
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<ProductVo>> Get(long id)
         {
             var product = await _repository.FindById(id);
@@ -23,6 +26,7 @@ namespace MicrosWPSShopping.ProductApi.Controllers
             return Ok(product);
         }
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<ProductVo>>> GetAll()
         {
             var product = await _repository.FindAll();
@@ -31,6 +35,7 @@ namespace MicrosWPSShopping.ProductApi.Controllers
             return Ok(product);
         }
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<ProductVo>> Create([FromBody] ProductVo vo)
         {
             if (vo == null)
@@ -39,6 +44,7 @@ namespace MicrosWPSShopping.ProductApi.Controllers
             return Ok(product);
         }
         [HttpPut]
+        [Authorize]
         public async Task<ActionResult<ProductVo>> Update([FromBody] ProductVo vo)
         {
             if (vo == null)
@@ -47,6 +53,7 @@ namespace MicrosWPSShopping.ProductApi.Controllers
             return Ok(product);
         }
         [HttpDelete("{id}")]
+        [Authorize(Roles =Role.Admin)]
         public async Task<ActionResult<bool>> Delete(long id)
         {
             var status = await _repository.Delete(id);
